@@ -1,9 +1,21 @@
 require "models"
 
 describe Models do
+  subject(:models) { described_class.new } 
   
   it "given data of a model" do
     info = [{"name": "Homer Simpson","location": "Springfield", "date_of_birth": "1956-05-12"},{"name": "Frank Reynolds","location": "Philidelphia", "date_of_birth": "1944-11-17"}]
-    expect(subject.information("info", "location")).to eq info
+    expect(models.information("info", "location")).to eq info
   end
+
+  #all info stored in an array
+  it "expect info provided to be an array" do
+    info = [{"name": "Homer Simpson","location": "Springfield", "date_of_birth": "1956-05-12"},{"name": "Frank Reynolds","location": "Philidelphia", "date_of_birth": "1944-11-17"}]
+    expect(models.information("info","location")).to be_kind_of Array
+  end
+
+  # it "given models info, includes name, location, date of birth" do
+  #   info = [{"name": "Homer Simpson","location": "Springfield", "date_of_birth": "1956-05-12"},{"name": "Frank Reynolds","location": "Philidelphia", "date_of_birth": "1944-11-17"}]
+  #   expect(models.information(:name,:location)).to not_be
+  # end
 end
