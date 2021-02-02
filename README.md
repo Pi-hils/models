@@ -9,6 +9,7 @@ We'd like you to build a program that accepts two inputs:
 
 The program should then filter the array of supplied talent, and output the names of talent whose location matches the location supplied. The supplied location should be consider case-insensitive, and the order in which names are outputted is not important.
 
+2 arguement. 1st to be model info (constant),2nd location
 ## Example
 input                                         |   Output
 [

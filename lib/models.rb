@@ -16,5 +16,12 @@ class Models
       }
    ]
 
+   if location == "Springfield"
+    "Homer Simpson, Krusty the Clown"
+   
+  elsif location == "Philidelphia"
+     "Frank Reynolds"
+   end
+
   end
 end
