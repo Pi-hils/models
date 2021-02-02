@@ -35,3 +35,10 @@ input                                         |   Output
 ]
 - A location of `Springfield`                 | Homer Simpson, 
                                                 Krusty the clown
+
+
+## Language
+- Ruby
+
+## Testing tool
+- Rspec
