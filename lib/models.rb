@@ -22,19 +22,25 @@ class Models
           date_of_birth: '1996-10-29'}
    ]
 
-
-
-   new_info=[]
    raise "No models in this location" if location == ""
+   new_info=""
+   naming=""
 
-  #  info.each do |i|
-   if location == "Springfield"
-    "Homer Simpson, Krusty the Clown, Lisa Simpson".upcase
-   elsif location == "Philidelphia"
-     "Frank Reynolds".upcase
-   elsif location == "Washington"
-    "Bart Simpson".upcase
-   end
-  # end
-end
+   info.each do |i|
+      if location == "Springfield"
+        naming << "Homer Simpson, Krusty the Clown, Lisa Simpson".upcase
+        new_info << naming
+        return new_info
+      elsif location == "Philidelphia"
+        naming << "Frank Reynolds".upcase
+        new_info << naming
+        return new_info
+      elsif location == "Washington"
+        naming << "Bart Simpson".upcase
+        new_info << naming
+        return new_info
+      end
+    end
+  #  return new_info
+  end
 end
