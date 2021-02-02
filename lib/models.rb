@@ -15,13 +15,13 @@ class Models
         date_of_birth: "1957-10-29"
       }
    ]
-   raise_error "No models in this location" if location == ""
+
+   raise "No models in this location" if location == ""
 
    if location == "Springfield"
     "Homer Simpson, Krusty the Clown"
    elsif location == "Philidelphia"
      "Frank Reynolds"
    end
-
   end
 end

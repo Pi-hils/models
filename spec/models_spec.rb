@@ -27,7 +27,7 @@ describe Models do
   end
 
   it "raises error if location or models not found" do
-    expect{raise "No models in this location"}.to raise_error("No models in this location")
+    expect{models.information("info","")}.to raise_error("No models in this location")
   end
 
 end
