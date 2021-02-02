@@ -39,7 +39,7 @@ describe Models do
   end
 
   it "location input is not case sensitive" do
-    expect(models.information("info","Springfield")).to eq("HOMER SIMPSON, KRUSTY THE CLOWN, LISA SIMPSON")
+    expect(models.information("info","SpringFIEld")).to eq("HOMER SIMPSON, KRUSTY THE CLOWN, LISA SIMPSON")
   end
 
 end

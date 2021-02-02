@@ -24,48 +24,25 @@ class Models
    new_info=""
    naming=""
 
-   while location != "" do
-    info.each do |i|
-     puts "enter location"
-    location = gets.chomp.capitalize
-
-       if location == "Springfield"
-         naming << "Homer Simpson, Krusty the Clown, Lisa Simpson".upcase
-         new_info << naming
+ while location != "" do
+   info.each do |i|
+     puts "Enter location"
+   location = gets.chomp.capitalize
+      if location == "Springfield"
+        naming << "Homer Simpson, Krusty the Clown, Lisa Simpson".upcase
+        new_info << naming
+        return new_info
+      elsif location == "Philidelphia"
+        naming << "Frank Reynolds".upcase
+        new_info << naming
          return new_info
-       elsif location == "Philidelphia"
-         naming << "Frank Reynolds".upcase
-         new_info << naming
-          return new_info
-       elsif location == "Washington"
-         naming << "Bart Simpson".upcase
-         new_info << naming
-          return new_info
-       end
-     end
-    return new_info
-   end
- end
-
-#  while location != "" do
-#    info.each do |i|
-#      puts "enter location"
-#    p location = gets.chomp.capitalize
-#       if location == "Springfield"
-#         naming << "Homer Simpson, Krusty the Clown, Lisa Simpson".upcase
-#         new_info << naming
-#         return new_info
-#       elsif location == "Philidelphia"
-#         naming << "Frank Reynolds".upcase
-#         new_info << naming
-#          return new_info
-#       elsif location == "Washington"
-#         naming << "Bart Simpson".upcase
-#         new_info << naming
-#          return new_info
-#       end
-#     end
-#    return new_info
-#   end
-# end
+      elsif location == "Washington"
+        naming << "Bart Simpson".upcase
+        new_info << naming
+         return new_info
+      end
+    end
+   return new_info
+  end
+end
 end
