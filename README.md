@@ -43,3 +43,6 @@ input                                         |   Output
 
 ## Testing tool
 - Rspec
+
+
+To be able to work on command line

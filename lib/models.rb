@@ -34,13 +34,13 @@ class Models
       elsif location == "Philidelphia"
         naming << "Frank Reynolds".upcase
         new_info << naming
-        return new_info
+         return new_info
       elsif location == "Washington"
         naming << "Bart Simpson".upcase
         new_info << naming
-        return new_info
+         return new_info
       end
     end
-  #  return new_info
+   return new_info
   end
 end
