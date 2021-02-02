@@ -14,6 +14,12 @@ describe Models do
     expect(models.information("info","location")).to be_kind_of Array
   end
 
+  #the array will include hash
+  it "expect info provided to be an array" do
+    info = [{"name": "Homer Simpson","location": "Springfield", "date_of_birth": "1956-05-12"},{"name": "Frank Reynolds","location": "Philidelphia", "date_of_birth": "1944-11-17"}]
+    expect(models.information("info","location")).to include(be_kind_of (Hash))
+  end 
+
   # it "given models info, includes name, location, date of birth" do
   #   info = [{"name": "Homer Simpson","location": "Springfield", "date_of_birth": "1956-05-12"},{"name": "Frank Reynolds","location": "Philidelphia", "date_of_birth": "1944-11-17"}]
   #   expect(models.information(:name,:location)).to not_be
