@@ -26,4 +26,8 @@ describe Models do
     expect(models.information("info","Philidelphia")).to eq("Frank Reynolds")
   end
 
+  it "raises error if location or models not found" do
+    expect{raise "No models in this location"}.to raise_error("No models in this location")
+  end
+
 end
